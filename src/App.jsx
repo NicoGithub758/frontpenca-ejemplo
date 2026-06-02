@@ -3,6 +3,8 @@ import { AuthProvider } from './context/AuthContext';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
+import PencasPage from './pages/PencasPage';
+import PagarPencaPage from './pages/PagarPencaPage';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/:tenantSlug/login" element={<LoginPage />} />
           <Route path="/:tenantSlug/register" element={<RegisterPage />} />
           <Route path="/:tenantSlug/dashboard" element={<DashboardPage />} />
+          <Route path="/:tenantSlug/pencas" element={<PencasPage />} />
+          <Route path="/:tenantSlug/pagar/:pencaId" element={<PagarPencaPage />} />
     
           
           {/* Ruta por defecto si no ponen nada o ponen mal la URL */}
